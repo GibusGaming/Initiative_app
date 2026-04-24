@@ -24,6 +24,4 @@ class player(unit):
         super().__init__(initiative,name)
     def throw(self,initiative,name):
         global initiv_list
-        initiative = int(initiative.get())
         initiv_list[name] = initiative
-        return initiv_list
